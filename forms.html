@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+    <style>
+        form > * + * {
+            margin-top: 1rem;
+        }
+        div {
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div>
+            <!--First name-->
+            <label for="firstName">
+                First Name
+                <input type="firstName">
+            </label>
+        </div>
+
+        <div>
+            <!--Last name -->
+            <label for="lastName">
+                Last Name 
+                <input type="lastName">
+            </label>
+        </div>
+
+        <div>
+            <label for="address">
+                Address
+                <input type="address">
+            </label>
+        </div>
+
+        <div>
+            <label for="state">
+                State
+                <select name="state" id="state">
+                    <option value="a">Selangor</option>
+                    <option value="b">Negeri Sembilan</option>
+                    <option value="c">Sabah</option>
+                </select>
+            </label>
+        </div>
+
+        <div>
+            <label for="password">
+                Password
+                <input type="password">
+            </label>
+        </div>
+
+        <div>
+            <!-- Guna Radio ada checklist -->
+            <label for="gender">
+                Gender
+                <input name="gender" type="radio">Male
+
+                <span>or</span>
+
+                <input name="gender" type="radio">Female
+            </label>
+        </div>
+
+        <div>
+            <!--Input guna checkbox-->
+            <label>
+                Do you noob?
+                <input type="checkbox"> Yes
+            </label>
+        </div>
+
+        <div>
+            <!--Try checkbox guna radio-->
+            <label>
+                Do you pro?
+                <input type="radio">Yes
+
+                <input type="radio">No
+
+            </label>
+        </div>
+
+        <div>
+            <label for="games">
+            How many of games you play a day?
+        </div>
+        <div>
+            <input type="radio"> 0 to 2 games
+            <input type="radio"> 2 to 4 games
+        </div>
+        <div>
+            <input type="radio"> 4 to 8 games
+            <input type="radio"> 8 to 19 games
+            </label>
+        </div>
+
+        <div>
+            <label for="ownPC">
+                Do you own a pc?
+                <select name="ownPC" id="ownPC">
+                    <option value="yes">YES</option>
+                    <option value="no">No</option>
+                </select>
+            </label>
+        </div>
+        
+        <div>
+            <label for="duration">
+                How long would you play games everyday?
+                <input name="duration" type="text">
+            </label>
+        </div>
+
+        <div>
+            <!-- nak buat box comment guna textarea -->
+            <label for="comments">
+                Comments :
+                <div>
+                    <textarea name="comments" id="comments" cols="100" rows="10">
+                    </textarea>
+                </div>
+            </label>
+        </div>
+
+        <div>
+            <input type="reset">
+            <button type="submit">Fly Away</button>
+        </div>
+
+    </form>
+</body>
+</html>
